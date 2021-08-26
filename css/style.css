@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.microondas {
+    display: flex;
+    background-color: #d4cdb7;
+    margin: 30px auto;
+    width: 450px;
+    height: 250px;
+}
+
+.porta {
+    width: 80%;
+    height: 100%;
+    border-right: solid 1px #505050;
+}
+
+.porta > .vidro {
+    margin: 20px;
+    background-color: #505050;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+
+.botoes {
+    width: 20%;
+}
+
+.botoes > .main-menu {
+    padding: 8px;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+}
+
+.botoes > .main-menu > .menu {
+    height: 100%;
+    width: 100%;
+}
+
+.display {
+    background-color: #505050;
+    height: 25px;
+    margin: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.btns {
+    margin-top: 10px;
+    clear: both;
+}
+
+.btn {
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #cbd1d6;
+    border: none;
+    box-shadow: 1px 1px #b5b3b3;
+    float: left;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #a4cede;
+}
+
+.btn > img {
+    width: 15px;
+    margin-top: 3px;
+}
+
+.border {
+    border-top: solid 1px #505050 ;
+}
+
+.vidro img {
+    width: 60px;
+    margin-left: calc(50% - 30px);
+    margin-top: 72px;
+}
+
+.start {
+    animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+.queimou {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #505050;
+    background-color: #c1c1c1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.alerta {
+    background-color: #924051;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+
+}
+
+.alerta p {
+    color: white;
+}

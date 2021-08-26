@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Microondas Da Zueira</title>
+    <link href="https://allfont.net/allfont.css?fonts=ds-digital" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+    <div class="microondas">
+        <div class="porta">
+
+            <div class="vidro" id="conteudo">
+
+            </div>
+
+        </div>
+        <div class="botoes">
+            <div class="main-menu">
+                <div class="menu">
+
+                    <div class="display" id="display-name">
+
+                    </div>
+                    <div class="display" id="display">
+
+                    </div>
+
+                    <div class="btns" id="items">
+
+                    </div>
+
+                    <div class="btns border">
+                        <input type="number" id="time" onchange="changeSecond(this.value)" placeholder="Tempo">
+
+                        <button class="btn" onclick="start()">
+                            <img src="img/play-button.png" >
+                        </button>
+                        <button class="btn" onclick="cancelar()">
+                            <img src="img/cancelar.png" >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alerta">
+        <p id="alert"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
