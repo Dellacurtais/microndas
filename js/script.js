@@ -27,6 +27,7 @@ let allOptions = [
 ];
 
 let limitTorrao = 2; //Limite em
+let limitKabumm = 3; //Limite em
 let isStart = false;
 let timeInit = 0;
 let haveItem = false;
@@ -113,8 +114,10 @@ function start(){
         if (timeInit <= 0){
             if (originalTime < haveItem['time']){
                 document.getElementById('alert').innerHTML = "Tempo Insuficiente";
-            }else if (originalTime >= (haveItem['time']*limitTorrao)){
+            }else if (originalTime >= (haveItem['time']*limitTorrao) && originalTime < (haveItem['time']*limitKabumm)){
                 document.getElementById('alert').innerHTML = "Seu alimento queimou";
+            }else if (originalTime >= (haveItem['time']*limitKabumm)){
+                document.getElementById('alert').innerHTML = "Kabumm Explodiu";
             }else{
                 document.getElementById('alert').innerHTML = "Prato pronto, bom apetite!!!";
             }
