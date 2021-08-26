@@ -83,6 +83,7 @@ function changeSecond(timeAdd){
 
 function cancelar(){
     haveItem = false;
+    isStart = false;
     timeInit = 0;
     document.getElementById('display').innerHTML = "";
     document.getElementById('conteudo').innerHTML = "";
@@ -101,6 +102,8 @@ function start(){
         alert("Microondas está em funcionamento, cancele ou espere acabar!");
         return;
     }
+
+    isStart = true;
 
     let originalTime = timeInit;
     document.getElementById('conteudo').childNodes[0].classList.add('start');
